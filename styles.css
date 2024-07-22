@@ -1,0 +1,94 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+/* Estilizando o body */
+body {
+    background-image: url('imagens/background.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Cobrir toda a área do body */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-attachment: fixed; /* Fixa a imagem no lugar */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Altura total da viewport */
+    width: 100vw; /* Largura total da viewport */
+    display: flex; /* Flex container */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: white; /* Cor do texto */
+}
+
+/* Estilizando o conteúdo */
+.content {
+    background-color: rgba(13, 1, 1, 0.9); /* Fundo branco com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 600px; /* Largura máxima do conteúdo */
+    text-align: center; /* Centralizar texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo para títulos */
+h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo para botões */
+.button {
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaçamento superior */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar */
+    font-size: 1em; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.button-venda {
+    background-color: #dc3545; /* Cor de fundo específica para o botão de venda */
+}
+
+/* Estilos para a imagem de observação do gráfico */
+.grafico-img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Estilo para o vídeo de simulação */
+#video-simulacao {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Limita a largura do vídeo */
+}
+
+/* Estilo para a área de simulação de compra e venda */
+.grafico-simulacao {
+    width: 80%;
+    height: 200px;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.grafico-barra {
+    width: 50px;
+    height: 100%;
+    background-color: #007bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#botoes-simulacao {
+    text-align: center;
+    margin-top: 20px;
+}
